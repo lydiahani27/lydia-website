@@ -1,0 +1,81 @@
+<html>
+     <head>
+	      <title>Lydia's Life!</title>
+		  <link rel="stylesheet" href="style.css" type="text/css">
+	 </head>
+	 <body style="margin: 0; background-image: url('images/gambar 9.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+		  <table border="0" align="center" width="1000">
+		       <tr height="50">
+			      <td width="100" align="center" <p align="center"><a href="index.html"><img src="images/logo.png" alt="Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;"></a></p></td>
+				  <td width="500" align="center"> </td>
+				  <td width="100" align="center" <li><nav><a href="about.html">About</a></li></nav></td>
+				  <td width="100" align="center" <li><nav><a href="resume.html">Resume</a></li></nav></td>
+				  <td width="100" align="center" <li><nav><a href="portfolio.html">Portfolio</a></li></nav></td>
+				  <td width="100" align="center" <li><nav><a href="album.html">Album</a></li></nav></td>
+				  <td width="70" align="center" <li><nav><a href="contact.html">Contact</a></li></nav></td>
+			   </tr>
+			   <tr>
+			     <td colspan="10"  height="55">
+			   </tr>
+			   <tr>
+			      <td colspan="10"  height="300">
+				  <div class="slideshow-container">
+				  <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="A2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="A3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="A5.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	</td>
+			   </tr>  
+			
+	
+	 <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	 </body>

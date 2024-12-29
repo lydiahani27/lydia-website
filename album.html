@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS if applicable -->
+</head>
+<body style="margin: 0; background-image: url('images/gambar 9.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+	<table border="0" align="center" width="1000">
+		       <tr height="50">
+			      <td width="100" align="center" <p align="center"><a href="index.html"><img src="images/logo.png" alt="Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;"></a></p></td>
+				  <td width="500" align="center"> </td>
+				  <td width="100" align="center" <li><nav><a href="about.html" style="text-decoration: none; color: inherit;">About</a></li></nav></td>
+				  <td width="100" align="center" <li><nav><a href="resume.html" style="text-decoration: none; color: inherit;">Resume</a></li></nav></td>
+				  <td width="100" align="center" <li><nav><a href="portfolio.html" style="text-decoration: none; color: inherit;">Portfolio</a></li></nav></td>
+				  <td width="100" align="center" <li><nav><a href="album.html" style="text-decoration: none; color: inherit;">Album</a></li></nav></td>
+				  <td width="70" align="center" <li><nav><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></li></nav></td>
+			   </tr>
+			   <tr>
+			      <td colspan="10"  height="700">
+				  <body style="font-family: Arial, sans-serif; margin: 20px;">
+
+  <h1 style="text-align: center;">My Photo Album</h1>
+
+  <!-- Album Container -->
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+    <!-- Photo 1 -->
+    <div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B3.jpg" alt="Photo 1" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B3.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B7.jpg" alt="Photo 2" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B7.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/e9.jpg" alt="Photo 3" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/e9.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B12.jpg" alt="Photo 4" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B12.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B11.jpg" alt="Photo 5" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B11.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B5.jpg" alt="Photo 6" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B5.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B10.jpg" alt="Photo 7" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B10.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/e5.jpg" alt="Photo 8" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/e5.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/e6.jpg" alt="Photo 9" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/e6.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B13.jpg" alt="Photo 10" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B13.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/B1.jpg" alt="Photo 11" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/B1.jpg')">
+    </div>
+	<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center; width: 300px;">
+      <img src="images/e7.jpg" alt="Photo 12" style="width: 100%; height: auto; border-radius: 8px;" onclick="openPopup('images/e7.jpg')">
+    </div>
+		</tr>
+		
+	<div id="popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 1000; justify-content: center; align-items: center;">
+    <span style="position: absolute; top: 20px; right: 20px; font-size: 30px; color: white; cursor: pointer;" onclick="closePopup()">×</span>
+    <img id="popupImage" src="" alt="Popup Image" style="max-width: 90%; max-height: 90%; border-radius: 8px;">
+  </div>
+
+	<script>
+    // Function to open the popup with the selected image
+    function openPopup(imageSrc) {
+      const popup = document.getElementById('popup');
+      const popupImage = document.getElementById('popupImage');
+      popup.style.display = 'flex';
+      popupImage.src = imageSrc;
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>	
+</body>
+</html>
