@@ -430,4 +430,16 @@ p {
     margin-right: 10px;
 }
 
+/*footer*/
+.content {
+    flex: 1; /* Pushes footer down */
+    padding: 10px;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
 
