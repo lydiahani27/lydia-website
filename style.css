@@ -430,11 +430,6 @@ p {
     margin-right: 10px;
 }
 
-/*footer*/
-.content {
-    flex: 1; /* Pushes footer down */
-    padding: 10px;
-}
 
 /*footer*/
 .footer {
