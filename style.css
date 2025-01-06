@@ -436,10 +436,11 @@ p {
     padding: 10px;
 }
 
+/*footer*/
 .footer {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 10px 0;
+  text-align: center;
+  padding: 3px;
+  background-color: none;
+  color: white;
 }
 
